@@ -1,0 +1,836 @@
+<html>
+	<head>
+	<style>	
+		@font-face{
+			font-family:dc;
+			src:url('fonts/AdobeHeitiStd-Regular.otf');
+		}
+		body{
+			background-color:#eaeae9;
+			margin:0;
+		}
+		#left{
+			height:100%;
+			width:20%;
+			float:left;
+			position:fixed;
+		}
+		#right{
+			height:auto;
+			width:80%;
+			margin-left:20%;
+			margin-bottom:50px;
+			float:left;
+			
+		}
+		#logo{
+			height:150px;
+			width:150px;
+			margin-top:50px;
+			margin-left:50px;
+		}
+		#menu{
+			margin-top:50px;
+		}
+		#menu ul{
+			list-style:none;
+		}
+		#menu ul li{
+			font:16px dc;
+			margin-top:10px;
+		}
+		#box1{
+			height:250px;
+			width:300px;
+			background-color:white;
+			float:left;
+			margin-top:50px;
+		}
+		#box2{
+			height:200px;
+			width:300px;
+			background-color:white;
+			float:left;
+			margin-left:70px;
+			margin-top:50px;
+		}
+		#box3{
+			height:350px;
+			width:300px;
+			background-color:white;
+			float:left;
+			margin-left:70px;
+			margin-top:50px;
+		}
+		#boxfotter{
+			width:300px;
+			height:50px;
+			background-color:white;
+			position:absolute;
+			z-index:9999;
+		}
+		#video{
+			height:13px;
+			width:20px;
+			margin-left:10px;
+			padding-top:10px;
+		}
+		#img1{
+			height:180px;
+			width:250px;
+			margin-left:25px;
+					
+			
+		}
+		#price{
+			float:left;
+			font:15px dc;
+			margin-left:15px;
+			margin-top:15px;
+		}
+		#like{
+			float:right;
+			height:20px;
+			width:20px;
+			margin-right:15px;
+			margin-top:15px;
+		}
+
+		#boxfotter2{
+			width:300px;
+			height:50px;
+			background-color:white;
+			position:absolute;
+			z-index:9999;
+		}
+		#video2{
+			height:13px;
+			width:20px;
+			margin-left:10px;
+			padding-top:10px;
+		}
+		#img2{
+			height:130px;
+			width:250px;
+			margin-left:25px;
+		}
+		#price2{
+			float:left;
+			font:15px dc;
+			margin-left:15px;
+			margin-top:15px;
+		}
+		#like2{
+			float:right;
+			height:20px;
+			width:20px;
+			margin-right:15px;
+			margin-top:15px;
+		}
+
+		#boxfotter3{
+			width:300px;
+			height:50px;
+			background-color:white;
+			position:absolute;
+			z-index:9999;
+			margin-top:100px;
+
+		}
+		#video3{
+			height:13px;
+			width:20px;
+			margin-left:10px;
+			padding-top:10px;
+		}
+		#img3{
+			height:180px;
+			width:250px;
+			margin-left:25px;
+		}
+		#price3{
+			float:left;
+			font:15px dc;
+			margin-left:15px;
+			margin-top:15px;
+		}
+		#like3{
+			float:right;
+			height:20px;
+			width:20px;
+			margin-right:15px;
+			margin-top:15px;
+		}
+
+
+		#box4{
+			height:250px;
+			width:300px;
+			background-color:white;
+			float:left;
+			margin-top:-50px;
+		}
+		#boxfotter4{
+			width:300px;
+			height:50px;
+			background-color:white;
+			position:absolute;
+			z-index:9999;
+			margin-top:5px;
+
+		}
+		#video4{
+			height:13px;
+			width:20px;
+			margin-left:10px;
+			padding-top:10px;
+		}
+		#img4{
+			height:180px;
+			width:250px;
+			margin-left:25px;
+		}
+		#price4{
+			float:left;
+			font:15px dc;
+			margin-left:15px;
+			margin-top:15px;
+		}
+		#like4{
+			float:right;
+			height:20px;
+			width:20px;
+			margin-right:15px;
+			margin-top:15px;
+		}
+
+		#box5{
+			height:300px;
+			width:300px;
+			background-color:white;
+			float:left;
+			margin-top:-100px;
+			margin-left:70px;
+		}
+		#boxfotter5{
+			width:300px;
+			height:50px;
+			background-color:white;
+			position:absolute;
+			z-index:9999;
+			margin-top:50px;
+
+		}
+		#video5{
+			height:13px;
+			width:20px;
+			margin-left:10px;
+			padding-top:10px;
+		}
+		#img5{
+			height:180px;
+			width:250px;
+			margin-left:25px;
+		}
+		#price5{
+			float:left;
+			font:15px dc;
+			margin-left:15px;
+			margin-top:15px;
+		}
+		#like5{
+			float:right;
+			height:20px;
+			width:20px;
+			margin-right:15px;
+			margin-top:15px;
+		}
+
+		#box6{
+			height:150px;
+			width:300px;
+			background-color:white;
+			float:left;
+			margin-top:50px;
+			margin-left:70px;
+		}
+		#boxfotter6{
+			width:300px;
+			height:50px;
+			background-color:white;
+			position:absolute;
+			z-index:9999;
+			margin-top:5px;
+
+		}
+		#video6{
+			height:13px;
+			width:20px;
+			margin-left:10px;
+			padding-top:10px;
+		}
+		#img6{
+			height:80px;
+			width:250px;
+			margin-left:25px;
+		}
+		#price6{
+			float:left;
+			font:15px dc;
+			margin-left:15px;
+			margin-top:15px;
+		}
+		#like6{
+			float:right;
+			height:20px;
+			width:20px;
+			margin-right:15px;
+			margin-top:15px;
+		}
+
+		#social{
+			position:absolute;
+			bottom:20;
+		}
+		#social ul{
+			list-style:none;
+		}	
+
+		#social ul li:first-child{
+			margin-left:0px;
+		}
+		#social ul li{
+			display:inline;
+			margin-left:10px;
+		}
+		#boxtext{
+			position:absolute;
+			height:30px;
+			width:285px;
+			background-color:white;
+			font:15px dc;
+			padding-left:15px;
+		}
+		
+		#Details{
+			width:150px;
+			height:39px;
+			font:15px dc;
+			float:left;
+			border-top:1px solid #323231;
+			margin-bottom:-50px;
+			text-align:center;
+			padding-top:10px;
+			background-color:white;
+		}
+		#Add{
+			width:150px;
+			height:40px;
+			font:15px dc;
+			background-color:#323231;
+			text-align:center;
+			padding-top:10px;
+			float:right;
+			margin-bottom:-50px;
+			color:white;
+		}
+		#boxbtn{
+			position:absolute;
+			height:50px;
+			width:300px;
+			background-color:white;
+			font:15px dc;
+			margin-bottom:-50px;
+		}
+
+	
+		#features{
+			height:520;
+			width:1000;
+			background-color:#323231;
+		}
+		#boxtitle{
+			width:200px;
+			font:20px dc;
+			color:#323231;
+			visibility:hidden;
+	
+		}
+		#boxtitle2{
+			width:200px;
+			font:10px dc;
+			color:#323231;
+			height:0px;
+			line-height:5px;
+			position:absolute;
+			display:none;
+		}
+		#line{
+			height:0px;
+			width:2px;
+			background-color:#2c2b2b;
+			position:absolute;
+			float:left;
+		}
+		#line2{
+			height:0px;
+			width:2px;
+			background-color:#2c2b2b;
+			position:absolute;
+			float:left;
+			margin-top:50px;
+		}
+		#line3{
+			height:0px;
+			width:2px;
+			background-color:#2c2b2b;
+			position:absolute;
+			float:left;
+			
+		}
+		#line4{
+			height:0px;
+			width:2px;
+			background-color:#2c2b2b;
+			position:absolute;
+			float:left;
+			margin-top:-10px;
+			margin-left:25px;
+		}
+		#line5{
+			height:0px;
+			width:2px;
+			background-color:#2c2b2b;
+			position:absolute;
+			float:left;
+			margin-left:423px;
+			margin-top:20px;
+		}
+		#feature{
+			font-family:dc;
+			float:left;
+			margin-left:5px;
+			margin-top:5px;
+			visibility:hidden;
+		}
+		#color{
+			font-family:dc;
+			float:left;
+			margin-left:5px;
+			visibility:hidden;
+			margin-top:55px;
+		
+		}
+		#review{
+			font-family:dc;
+			float:left;
+			margin-left:5px;
+			visibility:hidden;
+			margin-top:5px;
+			
+		}
+		#quantity{
+			font-family:dc;
+			float:left;
+			margin-left:428px;
+			visibility:hidden;
+			margin-top:30px;	
+		}
+		#description{
+			font-family:dc;
+			float:left;
+			margin-left:5px;
+			visibility:hidden;
+		}
+		#subfeature{
+			font-family:dc;
+			font-size:10px;
+			margin-left:0px;
+			display:none;
+			height:0px;
+			width:100px;
+			position:absolute;
+			margin-top:5px;
+		}
+		#black{
+			height:19px;
+			width:19px;
+			
+			border:1px solid black;
+			border-radius:100px;
+			display:none;
+		}
+		#black2{
+			
+			height:15px;
+			width:15px;
+			background-color:#525151;
+			border-radius:30px;
+			margin-top:2px;
+			display:none;
+		}
+		#c2{
+			background-color:#f1793f;
+			height:15px;
+			width:15px;
+			border-radius:30px;
+			margin-top:2px;
+			display:none;
+		}
+		#c3{
+			background-color:#aaaa15;
+			height:15px;
+			width:15px;
+			border-radius:30px;
+			margin-top:2px;
+			display:none;
+		}
+		#c4{
+			background-color:#42508f;
+			height:15px;
+			width:15px;
+			border-radius:30px;
+			margin-top:2px;
+			display:none;
+		}
+		#colortable{
+			height:50px;
+			width:100px;
+			margin-top:-5px;
+		}
+		#reviewline{
+			height:30px;
+			width:0px;
+			background-color:#000000;
+			
+		}
+		#reviewline2{
+			height:30px;
+			width:180px;
+			position:absolute;
+			background:url('image/rate2.png');
+			background-size:cover;
+			display:none;
+		}
+		#deslist{
+			font-family:dc;
+			font-size:12px;
+			margin-left:40px;
+			display:none;
+			height:0px;
+			width:550px;
+			position:absolute;
+			text-transform:uppercase;
+			margin-top:-10px;
+			line-height:25px;
+		}
+		#qun{
+			height:40px;
+			width:200px;
+			border:1px solid #eaeae9;
+			outline:none;
+			margin-top:5px;
+			padding-left:5px;
+			
+		}
+		#fav{
+			height:40px;
+			width:200px;
+			outline:none;
+			border:none;
+			background-color:#2c2b2b;
+			color:white;
+			font-family:dc;
+			margin-top:10px;
+			float:left;
+			margin-right:10px;
+			display:none;
+		}
+		#car{
+			height:38px;
+			width:200px;
+			outline:none;
+			margin-top:10px;
+			margin-right:35px;
+			padding-top:4px;
+			background-color:#2c2b2b;
+			float:left;
+			display:none;
+		}
+	</style>
+
+	<script src="jquery-1.10.2.min.js"></script>
+	<script>
+		$(document).ready(function()
+		{
+			$("#box1").delay(100).animate({height:520,width:1000});
+			$("#img1").delay(100).animate({height:300,width:500},s);
+
+			function s(){
+				$("#boxtitle").delay(400).css("visibility","visible");
+		
+				$("#boxtitle").delay(400).animate({marginLeft:200},sb);
+			}
+			function sb(){
+				$("#boxtitle2").show();
+				$("#boxtitle2").animate({height:40},line);
+			}
+			
+			function line(){
+
+				$("#line").delay(400).animate({height:75},l);
+				
+			
+			}
+			
+			function l(){
+				
+				
+				$("#feature").delay(400).css("visibility","visible");
+				
+				$("#feature").delay(400).animate({marginLeft:15},sf);
+				
+			}
+			
+			function sf(){
+				$("#subfeature").show();
+				$("#subfeature").animate({height:40});
+				
+				$("#line2").delay(400).animate({height:70},color);
+			}
+			function color(){
+				
+				
+				$("#color").delay(400).css("visibility","visible");
+				
+				$("#color").delay(400).animate({marginLeft:15},c1);
+			}
+			
+			function c1(){
+				$("#black").fadeIn(800);
+				$("#black2").fadeIn(800);
+				c2();
+			}
+			function c2(){
+				$("#c2").fadeIn(1000);
+				c3();
+			}
+			function c3(){
+				$("#c3").fadeIn(1200);
+				c4();
+			}
+			function c4(){
+				$("#c4").fadeIn(1400);
+				$("#line3").delay(400).animate({height:70},review);
+			}
+			function review(){
+				$("#review").delay(400).css("visibility","visible");
+				
+				$("#review").delay(400).animate({marginLeft:15},reviewline);
+			}
+			function reviewline(){
+				$("#reviewline2").fadeIn(400);
+				review2();
+			}
+			function review2(){
+				$("#reviewline").delay(400).animate({width:135},2000);
+				line4();
+			}
+			function line4(){
+				$("#line4").delay(400).animate({height:75},deslist);
+			}
+			function deslist(){
+				$("#deslist").show();
+				$("#deslist").animate({height:40},line5);
+
+			}
+			function line5(){
+				$("#line5").delay(400).animate({height:80},quantity);
+			}
+			function quantity(){
+				$("#quantity").delay(400).css("visibility","visible");
+				
+				$("#quantity").delay(400).animate({marginLeft:438},btn);
+
+			}
+			function btn(){
+				$("#fav").fadeIn();
+				$("#car").fadeIn();
+			}
+		});
+	</script>
+	</head>	
+	<body>
+		<div id="main">
+			<div id="left">
+				<div id="logo">
+					<img src="image/logo.png" height="100%" width="100%"/>
+				</div>
+				<div id="menu">
+					<ul>
+						<li>Products</li>
+						<li>Favorite</li>
+						<li>Cart</li>
+						<li>Contact</li>		
+						<li>About</li>
+					</ul>		
+				</div>
+				<div id="social">
+					<ul>	
+						<li><img src="facebook.png" height="20px" width="20px"/></li>
+						<li><img src="twitter.png" height="20px" width="20px"/></li>
+						<li><img src="google.png" height="20px" width="20px"/></li>
+						<li><img src="insta.png" height="20px" width="20px"/></li>
+					</ul>
+				
+				</div>
+			</div>
+			<div id="right">
+				<div id="box1">
+					<div id="video">
+						<img src="video.png" height="100%" width="100%" />
+					</div>
+					<div>
+						<table border="0">
+							<tr>
+								<td rowspan="4">
+									<center>
+										<img id="img1" src="image/sofa.png" height="100%" width="100%"/>
+									</center>
+								</td>
+								<td  valign="top">
+									<div id="boxtitle">
+										SOFA
+										<div id="boxtitle2">
+											Lather 
+										</div>
+									</div>
+									
+								</td>
+							</tr>
+							
+							<tr>
+								<td>
+									<div id="line"></div>
+									<div id="feature">
+										FEATURE
+										<div id="subfeature">
+											WELL DESIGNED<br>
+											LATHER SHEET<br>
+											COMFORTABLE SIDES
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr id="colorrow">
+								<td>
+									<div id="line2"></div>
+									<div id="color">
+										COLOR
+										<table border="0" id="colortable">
+											<tr>
+												<td>
+													<center>
+													<div id="black">
+														<div id="black2">
+														</div>
+													</div>
+													</center>
+												</td>
+												<td>
+													<div id="c2">
+													</div>
+												</td>
+												<td>
+													<div id="c3">
+													</div>
+												</td>
+												<td>
+													<div id="c4">
+													</div>
+												</td>
+											</tr>
+										</table>
+									</div>
+								</td>
+							</tr>
+							
+							<tr>
+								<td>
+									<div id="line3">
+									</div>
+									<div id="review">
+										REVIEW
+										<div id="reviewline">
+											<div id="reviewline2"></div>
+										</div>
+									</div>
+									
+								</td>
+							</tr>
+						</table>
+							
+						<table border="0">
+							<tr>
+								<td>
+									<div id="line4"></div>
+									<div id="description">DESCRIPTION</div>
+									
+									<div id="deslist">
+										This is the description part of sofa. It will cover some details about sofa.<br>
+										This is demo part of site so all content about sofa will be come soon.<br>
+										You can add more text or detail of sofa in replace of this text.<br>
+										
+									</div>
+								</td>
+								<td>
+									<div id="line5">
+									</div>
+									<div id="quantity">
+										QUANTITY<br>
+										<input type="text" value="1" id="qun"/>
+									</div>
+								</td>
+							</tr>
+						</table>
+						<table border="0" align="right">
+							<tr>
+								<td colspan="2" align="right">
+									<input type="button" id="fav" value="ADD TO FAVORITE"/>
+									<div id="car"><center><img src="image/cart2.png" height="30"  width="35"/></center></div>
+
+								</td>
+							</tr>
+						</table>
+					</div>
+					<!--<div id="boxfotter">
+						<div id="price">
+							Rs.15000
+						</div>
+						<div id="like">
+							<img src="Heart@2x2.png" height="100%" width="100%"/>
+						</div>
+					</div>
+					<div id="boxtext">
+						DEMO
+					</div>
+					<div id="boxbtn">	
+						<div id="Details">Details</div>
+						<div id="Add">Add to cart</div>
+					</div>
+					
+					-->
+					
+				</div>
+
+
+
+			
+				
+				
+			</div>
+
+			</div>
+		</div>
+	</body>
+</html>

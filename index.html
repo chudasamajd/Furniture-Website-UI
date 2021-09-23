@@ -1,0 +1,830 @@
+<html>
+	<head>
+	<style>	
+		@font-face{
+			font-family:dc;
+			src:url('fonts/AdobeHeitiStd-Regular.otf');
+		}
+		body{
+			background-color:#eaeae9;
+			margin:0;
+		}
+		#left{
+			height:100%;
+			width:20%;
+			float:left;
+		}
+		#right{
+			height:100%;
+			width:80%;
+			
+			float:left;
+		}
+		#logo{
+			height:150px;
+			width:150px;
+			margin-top:50px;
+			margin-left:50px;
+		}
+		#menu{
+			margin-top:50px;
+		}
+		#menu ul{
+			list-style:none;
+		}
+		#menu ul li{
+			font:16px dc;
+			margin-top:10px;
+		}
+		#box1{
+			height:250px;
+			width:300px;
+			background-color:white;
+			float:left;
+			margin-top:50px;
+		}
+		#box2{
+			height:200px;
+			width:300px;
+			background-color:white;
+			float:left;
+			margin-left:70px;
+			margin-top:50px;
+		}
+		#box3{
+			height:350px;
+			width:300px;
+			background-color:white;
+			float:left;
+			margin-left:70px;
+			margin-top:50px;
+		}
+		#boxfotter{
+			width:300px;
+			height:50px;
+			background-color:white;
+			position:absolute;
+			z-index:9999;
+		}
+		#video{
+			height:13px;
+			width:20px;
+			margin-left:10px;
+			padding-top:10px;
+		}
+		#img1{
+			height:180px;
+			width:250px;
+			margin-left:25px;
+					
+			
+		}
+		#price{
+			float:left;
+			font:15px dc;
+			margin-left:15px;
+			margin-top:15px;
+		}
+		#like{
+			float:right;
+			height:20px;
+			width:20px;
+			margin-right:15px;
+			margin-top:15px;
+		}
+
+		#boxfotter2{
+			width:300px;
+			height:50px;
+			background-color:white;
+			position:absolute;
+			z-index:9999;
+		}
+		#video2{
+			height:13px;
+			width:20px;
+			margin-left:10px;
+			padding-top:10px;
+		}
+		#img2{
+			height:130px;
+			width:250px;
+			margin-left:25px;
+		}
+		#price2{
+			float:left;
+			font:15px dc;
+			margin-left:15px;
+			margin-top:15px;
+		}
+		#like2{
+			float:right;
+			height:20px;
+			width:20px;
+			margin-right:15px;
+			margin-top:15px;
+		}
+
+		#boxfotter3{
+			width:300px;
+			height:50px;
+			background-color:white;
+			position:absolute;
+			z-index:9999;
+			margin-top:100px;
+
+		}
+		#video3{
+			height:13px;
+			width:20px;
+			margin-left:10px;
+			padding-top:10px;
+		}
+		#img3{
+			height:180px;
+			width:250px;
+			margin-left:25px;
+		}
+		#price3{
+			float:left;
+			font:15px dc;
+			margin-left:15px;
+			margin-top:15px;
+		}
+		#like3{
+			float:right;
+			height:20px;
+			width:20px;
+			margin-right:15px;
+			margin-top:15px;
+		}
+
+
+		#box4{
+			height:250px;
+			width:300px;
+			background-color:white;
+			float:left;
+			margin-top:-50px;
+		}
+		#boxfotter4{
+			width:300px;
+			height:50px;
+			background-color:white;
+			position:absolute;
+			z-index:9999;
+			margin-top:5px;
+
+		}
+		#video4{
+			height:13px;
+			width:20px;
+			margin-left:10px;
+			padding-top:10px;
+		}
+		#img4{
+			height:180px;
+			width:250px;
+			margin-left:25px;
+		}
+		#price4{
+			float:left;
+			font:15px dc;
+			margin-left:15px;
+			margin-top:15px;
+		}
+		#like4{
+			float:right;
+			height:20px;
+			width:20px;
+			margin-right:15px;
+			margin-top:15px;
+		}
+
+		#box5{
+			height:300px;
+			width:300px;
+			background-color:white;
+			float:left;
+			margin-top:-100px;
+			margin-left:70px;
+		}
+		#boxfotter5{
+			width:300px;
+			height:50px;
+			background-color:white;
+			position:absolute;
+			z-index:9999;
+			margin-top:50px;
+
+		}
+		#video5{
+			height:13px;
+			width:20px;
+			margin-left:10px;
+			padding-top:10px;
+		}
+		#img5{
+			height:180px;
+			width:250px;
+			margin-left:25px;
+		}
+		#price5{
+			float:left;
+			font:15px dc;
+			margin-left:15px;
+			margin-top:15px;
+		}
+		#like5{
+			float:right;
+			height:20px;
+			width:20px;
+			margin-right:15px;
+			margin-top:15px;
+		}
+
+		#box6{
+			height:150px;
+			width:300px;
+			background-color:white;
+			float:left;
+			margin-top:50px;
+			margin-left:70px;
+		}
+		#boxfotter6{
+			width:300px;
+			height:50px;
+			background-color:white;
+			position:absolute;
+			z-index:9999;
+			margin-top:5px;
+
+		}
+		#video6{
+			height:13px;
+			width:20px;
+			margin-left:10px;
+			padding-top:10px;
+		}
+		#img6{
+			height:80px;
+			width:250px;
+			margin-left:25px;
+		}
+		#price6{
+			float:left;
+			font:15px dc;
+			margin-left:15px;
+			margin-top:15px;
+		}
+		#like6{
+			float:right;
+			height:20px;
+			width:20px;
+			margin-right:15px;
+			margin-top:15px;
+		}
+
+		#social{
+			position:absolute;
+			bottom:20;
+		}
+		#social ul{
+			list-style:none;
+		}	
+
+		#social ul li:first-child{
+			margin-left:0px;
+		}
+		#social ul li{
+			display:inline;
+			margin-left:10px;
+		}
+		#boxtext{
+			position:absolute;
+			height:30px;
+			width:285px;
+			background-color:white;
+			font:15px dc;
+			padding-left:15px;
+		}
+		
+		#Details{
+			width:150px;
+			height:39px;
+			font:15px dc;
+			float:left;
+			border-top:1px solid #323231;
+			margin-bottom:-50px;
+			text-align:center;
+			padding-top:10px;
+			background-color:white;
+		}
+		#Add{
+			width:150px;
+			height:40px;
+			font:15px dc;
+			background-color:#323231;
+			text-align:center;
+			padding-top:10px;
+			float:right;
+			margin-bottom:-50px;
+			color:white;
+		}
+		#boxbtn{
+			position:absolute;
+			height:50px;
+			width:300px;
+			background-color:white;
+			font:15px dc;
+			margin-bottom:-50px;
+		}
+
+		#boxtext2{
+			position:absolute;
+			height:30px;
+			width:285px;
+			background-color:white;
+			font:15px dc;
+			padding-left:15px;
+		}
+		
+		#Details2{
+			width:150px;
+			height:39px;
+			font:15px dc;
+			float:left;
+			border-top:1px solid #323231;
+			margin-bottom:-50px;
+			text-align:center;
+			padding-top:10px;
+			background-color:white;
+		}
+		#Add2{
+			width:150px;
+			height:40px;
+			font:15px dc;
+			background-color:#323231;
+			text-align:center;
+			padding-top:10px;
+			float:right;
+			margin-bottom:-50px;
+			color:white;
+		}
+		#boxbtn2{
+			position:absolute;
+			height:50px;
+			width:300px;
+			background-color:white;
+			font:15px dc;
+			margin-bottom:-50px;
+		}
+
+
+		#boxtext3{
+			position:absolute;
+			height:30px;
+			width:285px;
+			background-color:white;
+			font:15px dc;
+			padding-left:15px;
+			margin-top:100px;
+		}
+		
+		#Details3{
+			width:150px;
+			height:39px;
+			font:15px dc;
+			float:left;
+			border-top:1px solid #323231;
+			margin-bottom:-50px;
+			text-align:center;
+			padding-top:10px;
+			background-color:white;
+		}
+		#Add3{
+			width:150px;
+			height:40px;
+			font:15px dc;
+			background-color:#323231;
+			text-align:center;
+			padding-top:10px;
+			float:right;
+			margin-bottom:-50px;
+			color:white;
+		}
+		#boxbtn3{
+			position:absolute;
+			height:50px;
+			width:300px;
+			background-color:white;
+			font:15px dc;
+			margin-bottom:-50px;
+			margin-top:100px;
+		}
+
+		#boxtext4{
+			position:absolute;
+			height:30px;
+			width:285px;
+			background-color:white;
+			font:15px dc;
+			padding-left:15px;
+			margin-top:5px;
+		}
+		
+		#Details4{
+			width:150px;
+			height:39px;
+			font:15px dc;
+			float:left;
+			border-top:1px solid #323231;
+			margin-bottom:-50px;
+			text-align:center;
+			padding-top:10px;
+			background-color:white;
+		}
+		#Add4{
+			width:150px;
+			height:40px;
+			font:15px dc;
+			background-color:#323231;
+			text-align:center;
+			padding-top:10px;
+			float:right;
+			margin-bottom:-50px;
+			color:white;
+		}
+		#boxbtn4{
+			position:absolute;
+			height:50px;
+			width:300px;
+			background-color:white;
+			font:15px dc;
+			margin-bottom:-50px;
+			margin-top:5px;
+		}
+
+		#boxtext5{
+			position:absolute;
+			height:30px;
+			width:285px;
+			background-color:white;
+			font:15px dc;
+			padding-left:15px;
+			margin-top:50px;
+		}
+		
+		#Details5{
+			width:150px;
+			height:39px;
+			font:15px dc;
+			float:left;
+			border-top:1px solid #323231;
+			margin-bottom:-50px;
+			text-align:center;
+			padding-top:10px;
+			background-color:white;
+		}
+		#Add5{
+			width:150px;
+			height:40px;
+			font:15px dc;
+			background-color:#323231;
+			text-align:center;
+			padding-top:10px;
+			float:right;
+			margin-bottom:-50px;
+			color:white;
+		}
+		#boxbtn5{
+			position:absolute;
+			height:50px;
+			width:300px;
+			background-color:white;
+			font:15px dc;
+			margin-bottom:-50px;
+			margin-top:50px;
+		}
+
+		#boxtext6{
+			position:absolute;
+			height:30px;
+			width:285px;
+			background-color:white;
+			font:15px dc;
+			padding-left:15px;
+			margin-top:5px;
+		}
+		
+		#Details6{
+			width:150px;
+			height:39px;
+			font:15px dc;
+			float:left;
+			border-top:1px solid #323231;
+			margin-bottom:-50px;
+			text-align:center;
+			padding-top:10px;
+			background-color:white;
+		}
+		#Add6{
+			width:150px;
+			height:40px;
+			font:15px dc;
+			background-color:#323231;
+			text-align:center;
+			padding-top:10px;
+			float:right;
+			margin-bottom:-50px;
+			color:white;
+		}
+		#boxbtn6{
+			position:absolute;
+			height:50px;
+			width:300px;
+			background-color:white;
+			font:15px dc;
+			margin-bottom:-50px;
+			margin-top:5px;
+		}
+		a{
+			color:black;
+			text-decoration:none;
+		}
+	</style>
+
+	<script src="jquery-1.10.2.min.js"></script>
+	<script>
+		$(document).ready(function()
+		{
+			$("#box1").hover(function()
+			{
+				$("#boxfotter").animate({marginTop:-80},400);
+				$("#boxtext").animate({marginTop:-30},400);
+				$("#boxbtn").animate({marginTop:0},400);
+			});
+			$("#box1").mouseleave(function()
+			{
+				$("#boxfotter").animate({marginTop:0},350);
+				$("#boxtext").animate({marginTop:0},350);
+				$("#boxbtn").animate({marginTop:0},350);
+			});
+
+			$("#box2").hover(function()
+			{
+				$("#boxfotter2").animate({marginTop:-80},400);
+				$("#boxtext2").animate({marginTop:-30},400);
+				$("#boxbtn2").animate({marginTop:0},400);
+			});
+			$("#box2").mouseleave(function()
+			{
+				$("#boxfotter2").animate({marginTop:0},350);
+				$("#boxtext2").animate({marginTop:0},350);
+				$("#boxbtn2").animate({marginTop:0},350);
+			});
+
+			$("#box3").hover(function()
+			{
+				$("#boxfotter3").animate({marginTop:20},400);
+				$("#boxtext3").animate({marginTop:70},400);
+				$("#boxbtn3").animate({marginTop:100},400);
+			});
+			$("#box3").mouseleave(function()
+			{
+				$("#boxfotter3").animate({marginTop:100},350);
+				$("#boxtext3").animate({marginTop:100},350);
+				$("#boxbtn3").animate({marginTop:100},350);
+			});
+
+			$("#box4").hover(function()
+			{
+				$("#boxfotter4").animate({marginTop:-75},400);
+				$("#boxtext4").animate({marginTop:-25},400);
+				$("#boxbtn4").animate({marginTop:5},400);
+			});
+			$("#box4").mouseleave(function()
+			{
+				$("#boxfotter4").animate({marginTop:5},350);
+				$("#boxtext4").animate({marginTop:5},350);
+				$("#boxbtn4").animate({marginTop:5},350);
+			});
+			
+			$("#box5").hover(function()
+			{
+				$("#boxfotter5").animate({marginTop:-30},400);
+				$("#boxtext5").animate({marginTop:20},400);
+				$("#boxbtn5").animate({marginTop:50},400);
+			});
+			$("#box5").mouseleave(function()
+			{
+				$("#boxfotter5").animate({marginTop:50},350);
+				$("#boxtext5").animate({marginTop:50},350);
+				$("#boxbtn5").animate({marginTop:50},350);
+			});
+	
+			$("#box6").hover(function()
+			{
+				$("#boxfotter6").animate({marginTop:-75},400);
+				$("#boxtext6").animate({marginTop:-25},400);
+				$("#boxbtn6").animate({marginTop:5},400);
+			});
+			$("#box6").mouseleave(function()
+			{
+				$("#boxfotter6").animate({marginTop:5},350);
+				$("#boxtext6").animate({marginTop:5},350);
+				$("#boxbtn6").animate({marginTop:5},350);
+			});
+		});
+	</script>
+	</head>	
+	<body>
+		<div id="main">
+			<div id="left">
+				<div id="logo">
+					<img src="image/logo.png" height="100%" width="100%"/>
+				</div>
+				<div id="menu">
+					<ul>
+						<a href="product.html"><li>Products</li></a>
+						<li>Favorite</li>
+						<li>Cart</li>
+						<li>Contact</li>		
+						<li>About</li>
+					</ul>		
+				</div>
+				<div id="social">
+					<ul>	
+						<li><img src="facebook.png" height="20px" width="20px"/></li>
+						<li><img src="twitter.png" height="20px" width="20px"/></li>
+						<li><img src="google.png" height="20px" width="20px"/></li>
+						<li><img src="insta.png" height="20px" width="20px"/></li>
+					</ul>
+				
+				</div>
+			</div>
+			<div id="right">
+				<div id="box1">
+					<div id="video">
+						<img src="video.png" height="100%" width="100%" />
+					</div>
+					<div id="img1">
+						<center>
+							<img src="image/sofa.png" height="100%" width="100%"/>
+						</center>
+					</div>
+					<div id="boxfotter">
+						<div id="price">
+							Rs.15000
+						</div>
+						<div id="like">
+							<img src="Heart@2x2.png" height="100%" width="100%"/>
+						</div>
+					</div>
+					<div id="boxtext">
+						DEMO
+					</div>
+					<div id="boxbtn">	
+						<div id="Details">Details</div>
+						<div id="Add">Add to cart</div>
+					</div>
+				</div>
+
+
+				<div id="box2">
+					<div id="video2">
+						<img src="video.png" height="100%" width="100%" />
+					</div>
+					<div id="img2">
+						<center>
+							<img src="image/drawer.jpg" height="100%" width="100%"/>
+						</center>
+					</div>
+					<div id="boxfotter2">
+						<div id="price2">
+							Rs.15000
+						</div>
+						<div id="like2">
+							<img src="Heart@2x2.png" height="100%" width="100%"/>
+						</div>
+					</div>
+					<div id="boxtext2">
+						DEMO
+					</div>
+					<div id="boxbtn2">	
+						<div id="Details2">Details</div>
+						<div id="Add2">Add to cart</div>
+					</div>
+				</div>
+
+
+				<div id="box3">
+					<div id="video3">
+						<img src="video.png" height="100%" width="100%" />
+					</div>
+					<div id="img3">
+						<center>
+							<img src="image/bed.jpg" height="100%" width="100%"/>
+						</center>
+					</div>
+					<div id="boxfotter3">
+						<div id="price3">
+							Rs.15000
+						</div>
+						<div id="like3">
+							<img src="Heart@2x2.png" height="100%" width="100%"/>
+						</div>
+					</div>
+					<div id="boxtext3">
+						DEMO
+					</div>
+					<div id="boxbtn3">	
+						<div id="Details3">Details</div>
+						<div id="Add3">Add to cart</div>
+					</div>
+				</div>
+
+				<div id="box4">
+					<div id="video4">
+						<img src="video.png" height="100%" width="100%" />
+					</div>
+					<div id="img4">
+						<center>
+							<img src="image/table3.jpg" height="100%" width="100%"/>
+						</center>
+					</div>
+					<div id="boxfotter4">
+						<div id="price4">
+							Rs.15000
+						</div>
+						<div id="like4">
+							<img src="Heart@2x2.png" height="100%" width="100%"/>
+						</div>
+					</div>
+					<div id="boxtext4">
+						DEMO
+					</div>
+					<div id="boxbtn4">	
+						<div id="Details4">Details</div>
+						<div id="Add4">Add to cart</div>
+					</div>
+				</div>
+
+				<div id="box5">
+					<div id="video5">
+						<img src="video.png" height="100%" width="100%" />
+					</div>
+					<div id="img5">
+						<center>
+							<img src="image/chir.jpg" height="100%" width="100%"/>
+						</center>
+					</div>
+					<div id="boxfotter5">
+						<div id="price5">
+							Rs.15000
+						</div>
+						<div id="like5">
+							<img src="Heart@2x2.png" height="100%" width="100%"/>
+						</div>
+					</div>
+					<div id="boxtext5">
+						DEMO
+					</div>
+					<div id="boxbtn5">	
+						<div id="Details5">Details</div>
+						<div id="Add5">Add to cart</div>
+					</div>
+				</div>
+
+
+				<div id="box6">
+					<div id="video6">
+						<img src="video.png" height="100%" width="100%" />
+					</div>
+					<div id="img6">
+						<center>
+							<img src="item1.png" height="100%" width="100%"/>
+						</center>
+					</div>
+					<div id="boxfotter6">
+						<div id="price6">
+							Rs.15000
+						</div>
+						<div id="like6">
+							<img src="Heart@2x2.png" height="100%" width="100%"/>
+						</div>
+					</div>
+					<div id="boxtext6">
+						DEMO
+					</div>
+					<div id="boxbtn6">	
+						<div id="Details6">Details</div>
+						<div id="Add6">Add to cart</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</body>
+</html>

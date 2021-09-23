@@ -1,0 +1,1579 @@
+<html>
+	<head>
+	<style>	
+		@font-face{
+			font-family:dc;
+			src:url('fonts/AdobeHeitiStd-Regular.otf');
+		}
+		body{
+			background-color:#eaeae9;
+			margin:0;
+		}
+		#left{
+			height:100%;
+			width:20%;
+			float:left;
+			position:fixed;
+		}
+		#right{
+			height:auto;
+			width:80%;
+			margin-left:20%;
+			margin-bottom:50px;
+			float:left;
+			
+		}
+		#logo{
+			height:150px;
+			width:150px;
+			margin-top:50px;
+			margin-left:50px;
+		}
+		#menu{
+			margin-top:50px;
+		}
+		#menu ul{
+			list-style:none;
+		}
+		#menu ul li{
+			font:16px dc;
+			margin-top:10px;
+		}
+		#box1{
+			height:250px;
+			width:300px;
+			background-color:white;
+			float:left;
+			margin-top:50px;
+		}
+		#box2{
+			height:200px;
+			width:300px;
+			background-color:white;
+			float:left;
+			margin-left:70px;
+			margin-top:50px;
+		}
+		#box3{
+			height:350px;
+			width:300px;
+			background-color:white;
+			float:left;
+			margin-left:70px;
+			margin-top:50px;
+		}
+		#boxfotter{
+			width:300px;
+			height:50px;
+			background-color:white;
+			position:absolute;
+			z-index:9999;
+		}
+		#video{
+			height:13px;
+			width:20px;
+			margin-left:10px;
+			padding-top:10px;
+		}
+		#img1{
+			height:180px;
+			width:250px;
+			margin-left:25px;
+					
+			
+		}
+		#price{
+			float:left;
+			font:15px dc;
+			margin-left:15px;
+			margin-top:15px;
+		}
+		#like{
+			float:right;
+			height:20px;
+			width:20px;
+			margin-right:15px;
+			margin-top:15px;
+		}
+
+		#boxfotter2{
+			width:300px;
+			height:50px;
+			background-color:white;
+			position:absolute;
+			z-index:9999;
+		}
+		#video2{
+			height:13px;
+			width:20px;
+			margin-left:10px;
+			padding-top:10px;
+		}
+		#img2{
+			height:130px;
+			width:250px;
+			margin-left:25px;
+		}
+		#price2{
+			float:left;
+			font:15px dc;
+			margin-left:15px;
+			margin-top:15px;
+		}
+		#like2{
+			float:right;
+			height:20px;
+			width:20px;
+			margin-right:15px;
+			margin-top:15px;
+		}
+
+		#boxfotter3{
+			width:300px;
+			height:50px;
+			background-color:white;
+			position:absolute;
+			z-index:9999;
+			margin-top:100px;
+
+		}
+		#video3{
+			height:13px;
+			width:20px;
+			margin-left:10px;
+			padding-top:10px;
+		}
+		#img3{
+			height:180px;
+			width:250px;
+			margin-left:25px;
+		}
+		#price3{
+			float:left;
+			font:15px dc;
+			margin-left:15px;
+			margin-top:15px;
+		}
+		#like3{
+			float:right;
+			height:20px;
+			width:20px;
+			margin-right:15px;
+			margin-top:15px;
+		}
+
+
+		#box4{
+			height:250px;
+			width:300px;
+			background-color:white;
+			float:left;
+			margin-top:-50px;
+		}
+		#boxfotter4{
+			width:300px;
+			height:50px;
+			background-color:white;
+			position:absolute;
+			z-index:9999;
+			margin-top:5px;
+
+		}
+		#video4{
+			height:13px;
+			width:20px;
+			margin-left:10px;
+			padding-top:10px;
+		}
+		#img4{
+			height:180px;
+			width:250px;
+			margin-left:25px;
+		}
+		#price4{
+			float:left;
+			font:15px dc;
+			margin-left:15px;
+			margin-top:15px;
+		}
+		#like4{
+			float:right;
+			height:20px;
+			width:20px;
+			margin-right:15px;
+			margin-top:15px;
+		}
+
+		#box5{
+			height:300px;
+			width:300px;
+			background-color:white;
+			float:left;
+			margin-top:-100px;
+			margin-left:70px;
+		}
+		#boxfotter5{
+			width:300px;
+			height:50px;
+			background-color:white;
+			position:absolute;
+			z-index:9999;
+			margin-top:50px;
+
+		}
+		#video5{
+			height:13px;
+			width:20px;
+			margin-left:10px;
+			padding-top:10px;
+		}
+		#img5{
+			height:180px;
+			width:250px;
+			margin-left:25px;
+		}
+		#price5{
+			float:left;
+			font:15px dc;
+			margin-left:15px;
+			margin-top:15px;
+		}
+		#like5{
+			float:right;
+			height:20px;
+			width:20px;
+			margin-right:15px;
+			margin-top:15px;
+		}
+
+		#box6{
+			height:150px;
+			width:300px;
+			background-color:white;
+			float:left;
+			margin-top:50px;
+			margin-left:70px;
+		}
+		#boxfotter6{
+			width:300px;
+			height:50px;
+			background-color:white;
+			position:absolute;
+			z-index:9999;
+			margin-top:5px;
+
+		}
+		#video6{
+			height:13px;
+			width:20px;
+			margin-left:10px;
+			padding-top:10px;
+		}
+		#img6{
+			height:80px;
+			width:250px;
+			margin-left:25px;
+		}
+		#price6{
+			float:left;
+			font:15px dc;
+			margin-left:15px;
+			margin-top:15px;
+		}
+		#like6{
+			float:right;
+			height:20px;
+			width:20px;
+			margin-right:15px;
+			margin-top:15px;
+		}
+
+		#social{
+			position:absolute;
+			bottom:20;
+		}
+		#social ul{
+			list-style:none;
+		}	
+
+		#social ul li:first-child{
+			margin-left:0px;
+		}
+		#social ul li{
+			display:inline;
+			margin-left:10px;
+		}
+		#boxtext{
+			position:absolute;
+			height:30px;
+			width:285px;
+			background-color:white;
+			font:15px dc;
+			padding-left:15px;
+		}
+		
+		#Details{
+			width:150px;
+			height:39px;
+			font:15px dc;
+			float:left;
+			border-top:1px solid #323231;
+			margin-bottom:-50px;
+			text-align:center;
+			padding-top:10px;
+			background-color:white;
+		}
+		#Add{
+			width:150px;
+			height:40px;
+			font:15px dc;
+			background-color:#323231;
+			text-align:center;
+			padding-top:10px;
+			float:right;
+			margin-bottom:-50px;
+			color:white;
+		}
+		#boxbtn{
+			position:absolute;
+			height:50px;
+			width:300px;
+			background-color:white;
+			font:15px dc;
+			margin-bottom:-50px;
+		}
+
+		#boxtext2{
+			position:absolute;
+			height:30px;
+			width:285px;
+			background-color:white;
+			font:15px dc;
+			padding-left:15px;
+		}
+		
+		#Details2{
+			width:150px;
+			height:39px;
+			font:15px dc;
+			float:left;
+			border-top:1px solid #323231;
+			margin-bottom:-50px;
+			text-align:center;
+			padding-top:10px;
+			background-color:white;
+		}
+		#Add2{
+			width:150px;
+			height:40px;
+			font:15px dc;
+			background-color:#323231;
+			text-align:center;
+			padding-top:10px;
+			float:right;
+			margin-bottom:-50px;
+			color:white;
+		}
+		#boxbtn2{
+			position:absolute;
+			height:50px;
+			width:300px;
+			background-color:white;
+			font:15px dc;
+			margin-bottom:-50px;
+		}
+
+
+		#boxtext3{
+			position:absolute;
+			height:30px;
+			width:285px;
+			background-color:white;
+			font:15px dc;
+			padding-left:15px;
+			margin-top:100px;
+		}
+		
+		#Details3{
+			width:150px;
+			height:39px;
+			font:15px dc;
+			float:left;
+			border-top:1px solid #323231;
+			margin-bottom:-50px;
+			text-align:center;
+			padding-top:10px;
+			background-color:white;
+		}
+		#Add3{
+			width:150px;
+			height:40px;
+			font:15px dc;
+			background-color:#323231;
+			text-align:center;
+			padding-top:10px;
+			float:right;
+			margin-bottom:-50px;
+			color:white;
+		}
+		#boxbtn3{
+			position:absolute;
+			height:50px;
+			width:300px;
+			background-color:white;
+			font:15px dc;
+			margin-bottom:-50px;
+			margin-top:100px;
+		}
+
+		#boxtext4{
+			position:absolute;
+			height:30px;
+			width:285px;
+			background-color:white;
+			font:15px dc;
+			padding-left:15px;
+			margin-top:5px;
+		}
+		
+		#Details4{
+			width:150px;
+			height:39px;
+			font:15px dc;
+			float:left;
+			border-top:1px solid #323231;
+			margin-bottom:-50px;
+			text-align:center;
+			padding-top:10px;
+			background-color:white;
+		}
+		#Add4{
+			width:150px;
+			height:40px;
+			font:15px dc;
+			background-color:#323231;
+			text-align:center;
+			padding-top:10px;
+			float:right;
+			margin-bottom:-50px;
+			color:white;
+		}
+		#boxbtn4{
+			position:absolute;
+			height:50px;
+			width:300px;
+			background-color:white;
+			font:15px dc;
+			margin-bottom:-50px;
+			margin-top:5px;
+		}
+
+		#boxtext5{
+			position:absolute;
+			height:30px;
+			width:285px;
+			background-color:white;
+			font:15px dc;
+			padding-left:15px;
+			margin-top:50px;
+		}
+		
+		#Details5{
+			width:150px;
+			height:39px;
+			font:15px dc;
+			float:left;
+			border-top:1px solid #323231;
+			margin-bottom:-50px;
+			text-align:center;
+			padding-top:10px;
+			background-color:white;
+		}
+		#Add5{
+			width:150px;
+			height:40px;
+			font:15px dc;
+			background-color:#323231;
+			text-align:center;
+			padding-top:10px;
+			float:right;
+			margin-bottom:-50px;
+			color:white;
+		}
+		#boxbtn5{
+			position:absolute;
+			height:50px;
+			width:300px;
+			background-color:white;
+			font:15px dc;
+			margin-bottom:-50px;
+			margin-top:50px;
+		}
+
+		#boxtext6{
+			position:absolute;
+			height:30px;
+			width:285px;
+			background-color:white;
+			font:15px dc;
+			padding-left:15px;
+			margin-top:5px;
+		}
+		
+		#Details6{
+			width:150px;
+			height:39px;
+			font:15px dc;
+			float:left;
+			border-top:1px solid #323231;
+			margin-bottom:-50px;
+			text-align:center;
+			padding-top:10px;
+			background-color:white;
+		}
+		#Add6{
+			width:150px;
+			height:40px;
+			font:15px dc;
+			background-color:#323231;
+			text-align:center;
+			padding-top:10px;
+			float:right;
+			margin-bottom:-50px;
+			color:white;
+		}
+		#boxbtn6{
+			position:absolute;
+			height:50px;
+			width:300px;
+			background-color:white;
+			font:15px dc;
+			margin-bottom:-50px;
+			margin-top:5px;
+		}
+		
+		
+		#box7{
+			height:350px;
+			width:300px;
+			background-color:white;
+			float:left;
+			margin-top:55px;
+		}
+		#boxtext7{
+			position:absolute;
+			height:30px;
+			width:285px;
+			background-color:white;
+			font:15px dc;
+			padding-left:15px;
+			margin-top:100px;
+		}
+		
+		#Details7{
+			width:150px;
+			height:39px;
+			font:15px dc;
+			float:left;
+			border-top:1px solid #323231;
+			margin-bottom:-50px;
+			text-align:center;
+			padding-top:10px;
+			background-color:white;
+		}
+		#Add7{
+			width:150px;
+			height:40px;
+			font:15px dc;
+			background-color:#323231;
+			text-align:center;
+			padding-top:10px;
+			float:right;
+			margin-bottom:-50px;
+			color:white;
+		}
+		#boxbtn7{
+			position:absolute;
+			height:50px;
+			width:300px;
+			background-color:white;
+			font:15px dc;
+			margin-bottom:-50px;
+			margin-top:100px;
+		}
+		#boxfotter7{
+			width:300px;
+			height:50px;
+			background-color:white;
+			position:absolute;
+			z-index:9999;
+			margin-top:100px;
+
+		}
+		#video7{
+			height:13px;
+			width:20px;
+			margin-left:10px;
+			padding-top:10px;
+		}
+		#img7{
+			height:180px;
+			width:250px;
+			margin-left:25px;
+		}
+		#price7{
+			float:left;
+			font:15px dc;
+			margin-left:15px;
+			margin-top:15px;
+		}
+		#like7{
+			float:right;
+			height:20px;
+			width:20px;
+			margin-right:15px;
+			margin-top:15px;
+		}
+		
+		#box8{
+			height:250px;
+			width:300px;
+			background-color:white;
+			float:left;
+			margin-left:70px;
+			margin-top:55px;
+		}
+		#boxtext8{
+			position:absolute;
+			height:30px;
+			width:285px;
+			background-color:white;
+			font:15px dc;
+			padding-left:15px;
+		}
+		
+		#Details8{
+			width:150px;
+			height:39px;
+			font:15px dc;
+			float:left;
+			border-top:1px solid #323231;
+			margin-bottom:-50px;
+			text-align:center;
+			padding-top:10px;
+			background-color:white;
+		}
+		#Add8{
+			width:150px;
+			height:40px;
+			font:15px dc;
+			background-color:#323231;
+			text-align:center;
+			padding-top:10px;
+			float:right;
+			margin-bottom:-50px;
+			color:white;
+		}
+		#boxbtn8{
+			position:absolute;
+			height:50px;
+			width:300px;
+			background-color:white;
+			font:15px dc;
+			margin-bottom:-50px;
+		}
+		#boxfotter8{
+			width:300px;
+			height:50px;
+			background-color:white;
+			position:absolute;
+			z-index:9999;
+		}
+		#video8{
+			height:13px;
+			width:20px;
+			margin-left:10px;
+			padding-top:10px;
+		}
+		#img8{
+			height:180px;
+			width:250px;
+			margin-left:25px;
+					
+			
+		}
+		#price8{
+			float:left;
+			font:15px dc;
+			margin-left:15px;
+			margin-top:15px;
+		}
+		#like8{
+			float:right;
+			height:20px;
+			width:20px;
+			margin-right:15px;
+			margin-top:15px;
+		}
+		
+		#box9{
+			height:200px;
+			width:300px;
+			background-color:white;
+			float:left;
+			margin-left:70px;
+			margin-top:55px;
+		}
+		#boxfotter9{
+			width:300px;
+			height:50px;
+			background-color:white;
+			position:absolute;
+			z-index:9999;
+		}
+		#video9{
+			height:13px;
+			width:20px;
+			margin-left:10px;
+			padding-top:10px;
+		}
+		#img9{
+			height:130px;
+			width:250px;
+			margin-left:25px;
+		}
+		#price9{
+			float:left;
+			font:15px dc;
+			margin-left:15px;
+			margin-top:15px;
+		}
+		#like9{
+			float:right;
+			height:20px;
+			width:20px;
+			margin-right:15px;
+			margin-top:15px;
+		}
+		#boxtext9{
+			position:absolute;
+			height:30px;
+			width:285px;
+			background-color:white;
+			font:15px dc;
+			padding-left:15px;
+		}
+		
+		#Details9{
+			width:150px;
+			height:39px;
+			font:15px dc;
+			float:left;
+			border-top:1px solid #323231;
+			margin-bottom:-50px;
+			text-align:center;
+			padding-top:10px;
+			background-color:white;
+		}
+		#Add9{
+			width:150px;
+			height:40px;
+			font:15px dc;
+			background-color:#323231;
+			text-align:center;
+			padding-top:10px;
+			float:right;
+			margin-bottom:-50px;
+			color:white;
+		}
+		#boxbtn9{
+			position:absolute;
+			height:50px;
+			width:300px;
+			background-color:white;
+			font:15px dc;
+			margin-bottom:-50px;
+		}
+		
+				
+		#box10{
+			height:300px; 
+			width:300px;
+			background-color:white;
+			float:left;
+			margin-top:55px;
+			margin-left:70px;
+		}
+		#boxfotter10{
+			width:300px;
+			height:50px;
+			background-color:white;
+			position:absolute;
+			z-index:9999;
+			margin-top:50px;
+
+		}
+		#video10{
+			height:13px;
+			width:20px;
+			margin-left:10px;
+			padding-top:10px;
+		}
+		#img10{
+			height:180px;
+			width:250px;
+			margin-left:25px;
+		}
+		#price10{
+			float:left;
+			font:15px dc;
+			margin-left:15px;
+			margin-top:15px;
+		}
+		#like10{
+			float:right;
+			height:20px;
+			width:20px;
+			margin-right:15px;
+			margin-top:15px;
+		}
+		#boxtext10{
+			position:absolute;
+			height:30px;
+			width:285px;
+			background-color:white;
+			font:15px dc;
+			padding-left:15px;
+			margin-top:50px;
+		}
+		
+		#Details10{
+			width:150px;
+			height:39px;
+			font:15px dc;
+			float:left;
+			border-top:1px solid #323231;
+			margin-bottom:-50px;
+			text-align:center;
+			padding-top:10px;
+			background-color:white;
+		}
+		#Add10{
+			width:150px;
+			height:40px;
+			font:15px dc;
+			background-color:#323231;
+			text-align:center;
+			padding-top:10px;
+			float:right;
+			margin-bottom:-50px;
+			color:white;
+		}
+		#boxbtn10{
+			position:absolute;
+			height:50px;
+			width:300px;
+			background-color:white;
+			font:15px dc;
+			margin-bottom:-50px;
+			margin-top:50px;
+		}
+		
+		
+		#box11{
+			height:150px; 
+			width:300px;
+			background-color:white;
+			float:left;
+			margin-top:-155px;
+		}
+		#boxfotter11{
+			width:300px;
+			height:50px;
+			background-color:white;
+			position:absolute;
+			z-index:9999;
+			margin-top:5px;
+		}
+		#video11{
+			height:13px;
+			width:20px;
+			margin-left:10px;
+			padding-top:10px;
+		}
+		#img11{
+			height:80px;
+			width:250px;
+			margin-left:25px;
+			
+			
+		}
+		#price11{
+			float:left;
+			font:15px dc;
+			margin-left:15px;
+			margin-top:15px;
+			
+		}
+		#like11{
+			float:right;
+			height:20px;
+			width:20px;
+			margin-right:15px;
+			margin-top:15px;
+		}
+		
+		#boxtext11{
+			position:absolute;
+			height:30px;
+			width:285px;
+			background-color:white;
+			font:15px dc;
+			padding-left:15px;
+			margin-top:5px;
+			
+		}
+		
+		#Details11{
+			width:150px;
+			height:39px;
+			font:15px dc;
+			float:left;
+			border-top:1px solid #323231;
+			margin-bottom:-50px;
+			text-align:center;
+			padding-top:10px;
+			background-color:white;
+		}
+		#Add11{
+			width:150px;
+			height:40px;
+			font:15px dc;
+			background-color:#323231;
+			text-align:center;
+			padding-top:10px;
+			float:right;
+			margin-bottom:-50px;
+			color:white;
+		}
+		#boxbtn11{
+			position:absolute;
+			height:50px;
+			width:300px;
+			background-color:white;
+			font:15px dc;
+			margin-bottom:-50px;
+			margin-top:5px;
+			
+		}
+
+
+
+		#box12{
+			height:250px;
+			width:300px;
+			background-color:white;
+			float:left;
+			margin-top:-255px;
+			margin-left:370px;
+		}
+		#boxfotter12{
+			
+			
+			width:300px;
+			height:50px;
+			background-color:white;
+			position:absolute;
+			z-index:9999;
+			margin-top:5px;
+		}
+		#video12{
+			height:13px;
+			width:20px;
+			margin-left:10px;
+			padding-top:10px;
+		}
+		#img12{
+			height:180px;
+			width:250px;
+			margin-left:25px;
+			
+		}
+		#price12{
+			float:left;
+			font:15px dc;
+			margin-left:15px;
+			margin-top:15px;
+			
+		}
+		#like12{
+			float:right;
+			height:20px;
+			width:20px;
+			margin-right:15px;
+			margin-top:15px;
+		}
+		#boxtext12{
+			position:absolute;
+			height:30px;
+			width:285px;
+			background-color:white;
+			font:15px dc;
+			padding-left:15px;
+			margin-top:5px;
+			
+		}
+		
+		#Details12{
+			width:150px;
+			height:39px;
+			font:15px dc;
+			float:left;
+			border-top:1px solid #323231;
+			margin-bottom:-50px;
+			text-align:center;
+			padding-top:10px;
+			background-color:white;
+		}
+		#Add12{
+			width:150px;
+			height:40px;
+			font:15px dc;
+			background-color:#323231;
+			text-align:center;
+			padding-top:10px;
+			float:right;
+			margin-bottom:-50px;
+			color:white;
+		}
+		#boxbtn12{
+			position:absolute;
+			height:50px;
+			width:300px;
+			background-color:white;
+			font:15px dc;
+			margin-bottom:-50px;
+			margin-top:5px;
+			
+		}
+	a{
+		color:black;
+	}
+	</style>
+
+	<script src="jquery-1.10.2.min.js"></script>
+	<script>
+		$(document).ready(function()
+		{
+			$("#box1").hover(function()
+			{
+				$("#boxfotter").animate({marginTop:-80},400);
+				$("#boxtext").animate({marginTop:-30},400);
+				$("#boxbtn").animate({marginTop:0},400);
+			});
+			$("#box1").mouseleave(function()
+			{
+				$("#boxfotter").animate({marginTop:0},350);
+				$("#boxtext").animate({marginTop:0},350);
+				$("#boxbtn").animate({marginTop:0},350);
+			});
+
+			$("#box2").hover(function()
+			{
+				$("#boxfotter2").animate({marginTop:-80},400);
+				$("#boxtext2").animate({marginTop:-30},400);
+				$("#boxbtn2").animate({marginTop:0},400);
+			});
+			$("#box2").mouseleave(function()
+			{
+				$("#boxfotter2").animate({marginTop:0},350);
+				$("#boxtext2").animate({marginTop:0},350);
+				$("#boxbtn2").animate({marginTop:0},350);
+			});
+
+			$("#box3").hover(function()
+			{
+				$("#boxfotter3").animate({marginTop:20},400);
+				$("#boxtext3").animate({marginTop:70},400);
+				$("#boxbtn3").animate({marginTop:100},400);
+			});
+			$("#box3").mouseleave(function()
+			{
+				$("#boxfotter3").animate({marginTop:100},350);
+				$("#boxtext3").animate({marginTop:100},350);
+				$("#boxbtn3").animate({marginTop:100},350);
+			});
+
+			$("#box4").hover(function()
+			{
+				$("#boxfotter4").animate({marginTop:-75},400);
+				$("#boxtext4").animate({marginTop:-25},400);
+				$("#boxbtn4").animate({marginTop:5},400);
+			});
+			$("#box4").mouseleave(function()
+			{
+				$("#boxfotter4").animate({marginTop:5},350);
+				$("#boxtext4").animate({marginTop:5},350);
+				$("#boxbtn4").animate({marginTop:5},350);
+			});
+			
+			$("#box5").hover(function()
+			{
+				$("#boxfotter5").animate({marginTop:-30},400);
+				$("#boxtext5").animate({marginTop:20},400);
+				$("#boxbtn5").animate({marginTop:50},400);
+			});
+			$("#box5").mouseleave(function()
+			{
+				$("#boxfotter5").animate({marginTop:50},350);
+				$("#boxtext5").animate({marginTop:50},350);
+				$("#boxbtn5").animate({marginTop:50},350);
+			});
+	
+			$("#box6").hover(function()
+			{
+				$("#boxfotter6").animate({marginTop:-75},400);
+				$("#boxtext6").animate({marginTop:-25},400);
+				$("#boxbtn6").animate({marginTop:5},400);
+			});
+			$("#box6").mouseleave(function()
+			{
+				$("#boxfotter6").animate({marginTop:5},350);
+				$("#boxtext6").animate({marginTop:5},350);
+				$("#boxbtn6").animate({marginTop:5},350);
+			});
+			
+			$("#box7").hover(function()
+			{
+				$("#boxfotter7").animate({marginTop:20},400);
+				$("#boxtext7").animate({marginTop:70},400);
+				$("#boxbtn7").animate({marginTop:100},400);
+			});
+			$("#box7").mouseleave(function()
+			{
+				$("#boxfotter7").animate({marginTop:100},350);
+				$("#boxtext7").animate({marginTop:100},350);
+				$("#boxbtn7").animate({marginTop:100},350);
+			});
+			
+			$("#box8").hover(function()
+			{
+				$("#boxfotter8").animate({marginTop:-80},400);
+				$("#boxtext8").animate({marginTop:-30},400);
+				$("#boxbtn8").animate({marginTop:0},400);
+			});
+			$("#box8").mouseleave(function()
+			{
+				$("#boxfotter8").animate({marginTop:0},350);
+				$("#boxtext8").animate({marginTop:0},350);
+				$("#boxbtn8").animate({marginTop:0},350);
+			});
+			
+			$("#box9").hover(function()
+			{
+				$("#boxfotter9").animate({marginTop:-80},400);
+				$("#boxtext9").animate({marginTop:-30},400);
+				$("#boxbtn9").animate({marginTop:0},400);
+			});
+			$("#box9").mouseleave(function()
+			{
+				$("#boxfotter9").animate({marginTop:0},350);
+				$("#boxtext9").animate({marginTop:0},350);
+				$("#boxbtn9").animate({marginTop:0},350);
+			});
+			
+			$("#box10").hover(function()
+			{
+				$("#boxfotter10").animate({marginTop:-30},400);
+				$("#boxtext10").animate({marginTop:20},400);
+				$("#boxbtn10").animate({marginTop:50},400);
+			});
+			$("#box10").mouseleave(function()
+			{
+				$("#boxfotter10").animate({marginTop:50},350);
+				$("#boxtext10").animate({marginTop:50},350);
+				$("#boxbtn10").animate({marginTop:50},350);
+			});
+			
+			$("#box11").hover(function()
+			{
+				$("#boxfotter11").animate({marginTop:-75},400);
+				$("#boxtext11").animate({marginTop:-25},400);
+				$("#boxbtn11").animate({marginTop:5},400);
+			});
+			$("#box11").mouseleave(function()
+			{
+				$("#boxfotter11").animate({marginTop:5},350);
+				$("#boxtext11").animate({marginTop:5},350);
+				$("#boxbtn11").animate({marginTop:5},350);
+			});
+			
+			$("#box12").hover(function()
+			{
+				$("#boxfotter12").animate({marginTop:-75},400);
+				$("#boxtext12").animate({marginTop:-25},400);
+				$("#boxbtn12").animate({marginTop:5},400);
+			});
+			$("#box12").mouseleave(function()
+			{
+				$("#boxfotter12").animate({marginTop:5},350);
+				$("#boxtext12").animate({marginTop:5},350);
+				$("#boxbtn12").animate({marginTop:5},350);
+			});
+			
+		});
+	</script>
+	</head>	
+	<body>
+		<div id="main">
+			<div id="left">
+				<div id="logo">
+					<img src="image/logo.png" height="100%" width="100%"/>
+				</div>
+				<div id="menu">
+					<ul>
+						<li>Products</li>
+						<li>Favorite</li>
+						<li>Cart</li>
+						<li>Contact</li>		
+						<li>About</li>
+					</ul>		
+				</div>
+				<div id="social">
+					<ul>	
+						<li><img src="facebook.png" height="20px" width="20px"/></li>
+						<li><img src="twitter.png" height="20px" width="20px"/></li>
+						<li><img src="google.png" height="20px" width="20px"/></li>
+						<li><img src="insta.png" height="20px" width="20px"/></li>
+					</ul>
+				
+				</div>
+			</div>
+			<div id="right">
+			
+				<a href="box1.html">
+					<div id="box1">
+						<div id="video">
+							<img src="video.png" height="100%" width="100%" />
+						</div>
+						<div id="img1">
+							<center>
+								<img src="image/sofa.png" height="100%" width="100%"/>
+							</center>
+						</div>
+						<div id="boxfotter">
+							<div id="price">
+								Rs.15000
+							</div>
+							<div id="like">
+								<img src="Heart@2x2.png" height="100%" width="100%"/>
+							</div>
+						</div>
+						<div id="boxtext">
+							DEMO
+						</div>
+						<div id="boxbtn">	
+							<div id="Details">Details</div>
+							<div id="Add">Add to cart</div>
+						</div>
+					</div>
+				</a>
+
+
+				<div id="box2">
+					<div id="video2">
+						<img src="video.png" height="100%" width="100%" />
+					</div>
+					<div id="img2">
+						<center>
+							<img src="image/drawer.jpg" height="100%" width="100%"/>
+						</center>
+					</div>
+					<div id="boxfotter2">
+						<div id="price2">
+							Rs.15000
+						</div>
+						<div id="like2">
+							<img src="Heart@2x2.png" height="100%" width="100%"/>
+						</div>
+					</div>
+					<div id="boxtext2">
+						DEMO
+					</div>
+					<div id="boxbtn2">	
+						<div id="Details2">Details</div>
+						<div id="Add2">Add to cart</div>
+					</div>
+				</div>
+
+
+				<div id="box3">
+					<div id="video3">
+						<img src="video.png" height="100%" width="100%" />
+					</div>
+					<div id="img3">
+						<center>
+							<img src="image/bed.jpg" height="100%" width="100%"/>
+						</center>
+					</div>
+					<div id="boxfotter3">
+						<div id="price3">
+							Rs.15000
+						</div>
+						<div id="like3">
+							<img src="Heart@2x2.png" height="100%" width="100%"/>
+						</div>
+					</div>
+					<div id="boxtext3">
+						DEMO
+					</div>
+					<div id="boxbtn3">	
+						<div id="Details3">Details</div>
+						<div id="Add3">Add to cart</div>
+					</div>
+				</div>
+
+				<div id="box4">
+					<div id="video4">
+						<img src="video.png" height="100%" width="100%" />
+					</div>
+					<div id="img4">
+						<center>
+							<img src="image/table3.jpg" height="100%" width="100%"/>
+						</center>
+					</div>
+					<div id="boxfotter4">
+						<div id="price4">
+							Rs.15000
+						</div>
+						<div id="like4">
+							<img src="Heart@2x2.png" height="100%" width="100%"/>
+						</div>
+					</div>
+					<div id="boxtext4">
+						DEMO
+					</div>
+					<div id="boxbtn4">	
+						<div id="Details4">Details</div>
+						<div id="Add4">Add to cart</div>
+					</div>
+				</div>
+
+				<div id="box5">
+					<div id="video5">
+						<img src="video.png" height="100%" width="100%" />
+					</div>
+					<div id="img5">
+						<center>
+							<img src="image/chir.jpg" height="100%" width="100%"/>
+						</center>
+					</div>
+					<div id="boxfotter5">
+						<div id="price5">
+							Rs.15000
+						</div>
+						<div id="like5">
+							<img src="Heart@2x2.png" height="100%" width="100%"/>
+						</div>
+					</div>
+					<div id="boxtext5">
+						DEMO
+					</div>
+					<div id="boxbtn5">	
+						<div id="Details5">Details</div>
+						<div id="Add5">Add to cart</div>
+					</div>
+				</div>
+
+
+				<div id="box6">
+					<div id="video6">
+						<img src="video.png" height="100%" width="100%" />
+					</div>
+					<div id="img6">
+						<center>
+							<img src="item1.png" height="100%" width="100%"/>
+						</center>
+					</div>
+					<div id="boxfotter6">
+						<div id="price6">
+							Rs.15000
+						</div>
+						<div id="like6">
+							<img src="Heart@2x2.png" height="100%" width="100%"/>
+						</div>
+					</div>
+					<div id="boxtext6">
+						DEMO
+					</div>
+					<div id="boxbtn6">	
+						<div id="Details6">Details</div>
+						<div id="Add6">Add to cart</div>
+					</div>
+				</div>
+
+
+				<div id="box7">
+					<div id="video7">
+						<img src="video.png" height="100%" width="100%" />
+					</div>
+					<div id="img7">
+						<center>
+							<img src="image/bed.jpg" height="100%" width="100%"/>
+						</center>
+					</div>
+					<div id="boxfotter7">
+						<div id="price7">
+							Rs.15000
+						</div>
+						<div id="like7">
+							<img src="Heart@2x2.png" height="100%" width="100%"/>
+						</div>
+					</div>
+					<div id="boxtext7">
+						DEMO
+					</div>
+					<div id="boxbtn7">	
+						<div id="Details7">Details</div>
+						<div id="Add7">Add to cart</div>
+					</div>
+				</div>
+
+				<div id="box8">
+					<div id="video8">
+						<img src="video.png" height="100%" width="100%" />
+					</div>
+					<div id="img8">
+						<center>
+							<img src="image/sofa.png" height="100%" width="100%"/>
+						</center>
+					</div>
+					<div id="boxfotter8">
+						<div id="price8">
+							Rs.15000
+						</div>
+						<div id="like8">
+							<img src="Heart@2x2.png" height="100%" width="100%"/>
+						</div>
+					</div>
+					<div id="boxtext8">
+						DEMO
+					</div>
+					<div id="boxbtn8">	
+						<div id="Details8">Details</div>
+						<div id="Add8">Add to cart</div>
+					</div>
+				</div>
+
+			
+				<div id="box9">
+					<div id="video9">
+						<img src="video.png" height="100%" width="100%" />
+					</div>
+					<div id="img9">
+						<center>
+							<img src="image/drawer.jpg" height="100%" width="100%"/>
+						</center>
+					</div>
+					<div id="boxfotter9">
+						<div id="price9">
+							Rs.15000
+						</div>
+						<div id="like9">
+							<img src="Heart@2x2.png" height="100%" width="100%"/>
+						</div>
+					</div>
+					<div id="boxtext9">
+						DEMO
+					</div>
+					<div id="boxbtn9">	
+						<div id="Details9">Details</div>
+						<div id="Add9">Add to cart</div>
+					</div>
+				</div>
+
+			<div id="box10">
+					<div id="video10">
+						<img src="video.png" height="100%" width="100%" />
+					</div>
+					<div id="img10">
+						<center>
+							<img src="item1.png" height="100%" width="100%"/>
+						</center>
+					</div>
+					<div id="boxfotter10">
+						<div id="price10">
+							Rs.15000
+						</div>
+						<div id="like10">
+							<img src="Heart@2x2.png" height="100%" width="100%"/>
+						</div>
+					</div>
+					<div id="boxtext10">
+						DEMO
+					</div>
+					<div id="boxbtn10">	
+						<div id="Details10">Details</div>
+						<div id="Add10">Add to cart</div>
+					</div>
+				</div>
+
+
+				<div id="box11">
+					<div id="video11">
+						<img src="video.png" height="100%" width="100%" />
+					</div>
+					<div id="img11">
+						<center>
+							<img src="image/table3.jpg" height="100%" width="100%"/>
+						</center>
+					</div>
+					<div id="boxfotter11">
+						<div id="price11">
+							Rs.15000
+						</div>
+						<div id="like11">
+							<img src="Heart@2x2.png" height="100%" width="100%"/>
+						</div>
+					</div>
+					<div id="boxtext11">
+						DEMO
+					</div>
+					<div id="boxbtn11">	
+						<div id="Details11">Details</div>
+						<div id="Add11">Add to cart</div>
+					</div>
+				</div>
+				
+				<div id="box12">
+					<div id="video12">
+						<img src="video.png" height="100%" width="100%" />
+					</div>
+					<div id="img12">
+						<center>
+							<img src="image/chir.jpg" height="100%" width="100%"/>
+						</center>
+					</div>
+					<div id="boxfotter12">
+						<div id="price12">
+							Rs.15000
+						</div>
+						<div id="like12">
+							<img src="Heart@2x2.png" height="100%" width="100%"/>
+						</div>
+					</div>
+					<div id="boxtext12">
+						DEMO
+					</div>
+					<div id="boxbtn12">	
+						<div id="Details12">Details</div>
+						<div id="Add12">Add to cart</div>
+					</div>
+				</div>
+				
+			</div>
+
+			</div>
+		</div>
+	</body>
+</html>
